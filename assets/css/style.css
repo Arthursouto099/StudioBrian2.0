@@ -193,20 +193,7 @@ header {
 
 
 
-.banner-1 {
-    margin-left: 0vw;
-    transition: 3s;
-}
 
-.banner-2 {
-    margin-left: -100vw;
-    transition: 3s;
-}
-
-.banner-3 {
-    margin-left: -200vw;
-    transition: 3s;
-}
 
 .default {
 
@@ -247,7 +234,8 @@ header {
 }
 
 .default.dark {
-    background-color: #000;
+    background: rgb(0,0,0);
+background: linear-gradient(45deg, rgb(152, 177, 110) 0%, rgb(0, 0, 0) 55%, rgb(0, 0, 0) 81%, rgb(0, 0, 0) 100%);
 }
 
 .default.dark .section-title,
@@ -307,12 +295,13 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 65px;
+    
    
 }
 
 .question-desc .img-question img {
-    width: 100px;
+    width: 600px;
+    
 }
 
 
@@ -324,6 +313,15 @@ header {
 
 .question-desc .img-slogan img {
     width: 300px;
+}
+
+.img-ebook img {
+    filter: drop-shadow(5px 6px 10px var(--text-color));
+}
+
+.img-ebook img:hover {
+    transform: rotate(10deg);
+    transition: 2s;
 }
 
 .img-question {
@@ -346,17 +344,20 @@ header {
 }
 
 
+
 .img-question h4 {
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 10px;
+   color: var(--text-color);
+   font-size: 20px;
+   margin-top: -40px;
+   margin-bottom: 10px;
 }
-
-
+ 
 .img-question p {
     text-align: center;
+    
 }
+
+
 
 .question-forms {
     display: flex;
@@ -365,15 +366,19 @@ header {
 
 
 .question-item {
-    flex: 1;
-    margin-bottom: 20px;
-    background-color: rgba(38, 38, 38, 0.8);
-    padding: 15px; 
+    width: 400px;
+    margin-bottom: 25px;
+    background-color: rgba(38, 38, 38, 0.3);
+    padding: 20px; 
     border-radius: 20px;
+    
 }
 
 .question-item h1 {
     margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 19px;
+    
 }
 
 .question-item p {
@@ -833,8 +838,10 @@ form {
           margin-bottom: 10px; 
       }
 
-      .question-desc h1 {
+      .question-desc  {
         max-width: none;
+       
+        
       }
   
       .question-forms {
@@ -849,6 +856,8 @@ form {
     
 }
 @media (max-width: 450px) {
+
+   
     
     .logo {
         margin-left: 40px;
@@ -1040,6 +1049,18 @@ form {
         margin-bottom: 40px;
      }
 
+     .question-desc h1 {
+        font-size: 20px;
+     }
+
+     .question-desc {
+        overflow: hidden;
+     }
+
+     .question-desc .img-question img {
+        width: 500px;
+     }
+
      .desc-information {
         margin-bottom: 140px;
         margin-left: 20px;
@@ -1050,6 +1071,24 @@ form {
        .desc-information h1 {
         font-size: 18px;
      }
+
+     .question-item {
+        width: 350px;
+        margin: auto;
+        margin-bottom: 20px;
+        padding: 20px;
+        margin-top: 10px;
+        
+     }
+
+     
+.default.dark {
+    background: rgb(0,0,0);
+    background: linear-gradient(-255deg, rgb(152, 177, 110) -90%, rgb(0, 0, 0) 55%, rgb(0, 0, 0) 81%, rgb(0, 0, 0) 100%);
+}
+
+    
+     
 
 
 }

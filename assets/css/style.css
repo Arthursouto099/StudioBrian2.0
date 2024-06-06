@@ -226,6 +226,12 @@ header {
     border-radius: 20px;
 }
 
+.button:hover {
+    transform: scale(1.1);
+    transition: 2s;
+    background-color: #99a2cd;
+}
+
 
 
 
@@ -488,7 +494,19 @@ header {
 
 }
 
+.ebook-area {
+    margin-bottom: 40px;
+}
 
+
+.question-membro {
+    margin-left: 50px;
+    margin-right: 0;
+}
+
+.membro-item {
+    background-color: #f3f3f3;
+}
 
 
 .produto-area {
@@ -496,7 +514,59 @@ header {
 }
 
 
-@media (min-width:450px) and (max-width: 800px) {
+.bar {
+    margin-top: -50px;
+    background-color: rgba(108, 115, 157, 0.4);
+    display: block;
+    padding: 10px;
+    display: none;
+    
+}
+
+.bar-2 {
+    display: block;
+}
+
+
+.bar h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+
+.ebook-area {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    color: #fff;
+}
+
+
+.ebook--desc h1 {
+    margin-top: 60px;
+  font-size: 55px;
+  text-transform: uppercase;
+  max-width: 300px;
+}
+
+.ebook--img img {
+    margin-top: 50px;
+    width:500px;
+    margin-left: 100px;
+    filter: drop-shadow(5px 6px 10px var(--text-color));
+}
+
+.ebook--desc p {
+    max-width: 300px;
+    font-size: 19px;
+}
+
+.ebook--desc span {
+    color: var(--text-color);
+}
+
+@media (min-width:451px) and (max-width: 800px) {
 
     .logo {
         margin-left: 40px;
@@ -541,8 +611,16 @@ header {
         margin-bottom: 30px;
     }
 
-    .section-aboutus--rigth {
-        width: auto;
+    .section-aboutus--rigth  {
+         width: auto;
+        
+    }
+
+   
+
+    .section-aboutus--rigth img {
+        width: 400px;
+        margin: auto;
     }
 
     .product---left img {
@@ -564,12 +642,22 @@ header {
 
     .question-desc {
         max-width: none;
+    }
 
-
+    .question-desc h1 {
+        text-align: center;
+        max-width: none;
     }
 
     .question-forms {
         padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .question-item {
+        margin: auto;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
 
     .img-question {
@@ -577,6 +665,57 @@ header {
         padding: 0;
         padding: 10px;
     }
+
+    .video-area iframe  {
+        margin-top: 30px;
+        left: 0cap;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        border-radius: 15px;
+       
+       
+     }
+
+     .video-area {
+        margin-bottom: 50px ;
+     }
+ 
+     .secao-video {
+      flex-direction: column;
+      display: block;
+     }
+ 
+     .secao-video aside h2 {
+        font-size: 30px;
+        text-align: center;
+        line-height: 40px;
+     }
+ 
+     .secao-video aside p {
+         text-align: center;
+         font-size: 15px;
+         padding: 20px ;
+         max-width: none;
+         line-height: 20px;
+     }
+
+     .question-buy-img  img  {
+        height: 350px;
+        height: auto;
+        width: auto;
+        
+}
+
+
+.question-membro {
+   margin: auto;
+}
+
+.area-membro {
+    flex-direction: column-reverse;
+ }
+
 
 }
 
@@ -720,6 +859,8 @@ header {
     .question-desc {
         overflow: hidden;
         margin-top: -90px;
+        padding-right: 30px;
+        padding-left: 30px;
     }
     
     .desc-slogan h2 {
@@ -744,6 +885,7 @@ header {
     }
     .question-forms {
         margin-bottom: 100px;
+        
     }
 
     .question-item {
@@ -752,6 +894,8 @@ header {
         margin-bottom: 20px;
         padding: 20px;
         margin-top: 10px;
+        padding-right: 30px;
+        padding-left: 30px;
 
     }
 
@@ -778,24 +922,18 @@ header {
         background: linear-gradient(-255deg, rgb(101, 101, 141) -90%, rgb(0, 0, 0) 55%, rgb(0, 0, 0) 81%, rgb(0, 0, 0) 100%);
     }
 
-    .video-area iframe  {
-        margin-top: 30px;
-        left: 0cap;
-        width: 100%;
-        height: 100%;
-        padding: 20px;
-        border-radius: 15px;
-       
-       
-     }
+   
 
      .video-area {
-        margin-bottom: 50px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    
      }
  
      .secao-video {
       flex-direction: column;
-      margin-bottom: 40px;
       display: block;
      }
  
@@ -811,10 +949,62 @@ header {
          padding: 20px ;
          line-height: 20px;
      }
-
+   
+     .question-buy-img  img  {
+                 height: auto;
+                 width: auto;
+                 filter: drop-shadow(5px 6px 20px var(--text-color));
+                 
+     }
      
+
+     .area-membro {
+        flex-direction: column-reverse;
+     }
+
+     .question-membro {
+        margin-left: 0;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-top: -70px;
+     }
+
+
+     .membro-forms {
+        margin-top: -10px;
+        padding-right: 30px;
+        padding-left: 30px;
+     }
+
+     .img-membro p {
+        margin-top: 10px;
+     }
+
+
+     .bar {
+        display: block;
+     }
      
 
+     .ebook-section {
+        display: none;
+     }
+     
+
+}
+
+
+
+footer {
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+}
+
+footer h1 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 17px;
 }
 
 

@@ -14,6 +14,11 @@
 
 }
 
+
+section {
+    overflow: hidden;
+}
+
 body {
     font-family: "Montserrat", arial;
     font-size: 13px;
@@ -496,6 +501,7 @@ header {
 
 .ebook-area {
     margin-bottom: 40px;
+    overflow: hidden;
 }
 
 
@@ -709,12 +715,26 @@ header {
 
 
 .question-membro {
-   margin: auto;
+    max-width: none;
+    margin: 0;
+}
+
+.question-membro h1 {
+    text-align: center;
+    max-width: none;
 }
 
 .area-membro {
     flex-direction: column-reverse;
  }
+
+ .ebook-area {
+    display: none;
+ }
+
+ 
+
+ 
 
 
 }
@@ -968,6 +988,7 @@ header {
         padding-left: 30px;
         margin-top: -70px;
      }
+     
 
 
      .membro-forms {
@@ -989,6 +1010,11 @@ header {
      .ebook-section {
         display: none;
      }
+
+
+     
+
+
      
 
 }
